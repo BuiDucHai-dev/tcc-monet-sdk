@@ -44,6 +44,9 @@ publishing {
         register<MavenPublication>("release") {
             afterEvaluate {
                 from(components["release"])
+                groupId = "com.tcc.monet"
+                artifactId = "monet-sdk"
+                version = "1.0.1"
             }
         }
     }
